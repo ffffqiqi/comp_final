@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮轮风格生成</title>
+
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+
+<body>
+    <div class="shortcut">
+        <div>
+            <h1>Cabinchic</h1>
+        </div>
+    </div>
+
+    <div class="registerBlock w">
+
+        <div class="baseBlock">
+        </div>
+        <div class="baseBlockLine">
+        </div>
+        <div class="pic1">
+            <!-- <img src="images/pic2.png"> -->
+        </div>
+        <div class="registerContent">
+            <h1>Hello!</h1>
+            <h2>Welcome back you have been missed</h2>
+            <ul>
+                <li><input type="text" value="Enter username" class="username"></li>
+                <li><input type="text" value="Password" class="username"></li>
+                <li><a href="127.0.0.1:7000"><input type="button" value="Submit" class="submit">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="register">
+
+        </div>
+    </div>
+
+</body>
+<script>
+    // 获取提交按钮的引用
+    const submitButton = document.querySelector('.submit');
+
+    // 点击事件处理程序
+    submitButton.addEventListener('click', (event) => {
+        event.preventDefault(); // 阻止表单的默认提交行为
+
+        const usernameInput = document.querySelector('.username');
+        const passwordInput = document.querySelector('.password');
+
+        // 获取用户名和密码的值
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // 检查用户名和密码是否正确
+        if (username === 'fangqiqi' && password === '123456') {
+            // 当用户名和密码正确时，跳转到端口为 7000 的页面
+            window.location.href = 'http://localhost:7000/';
+        } else {
+            // 当用户名和密码不正确时，弹出提示窗口
+            alert('用户名或密码不正确');
+        }
+    });
+</script>
+
+</html>

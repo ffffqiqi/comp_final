@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom, #C9E7F4, #0D78F4);
+}
+
+.shortcut {
+    height: 95px;
+    border-bottom: white 1px solid;
+    width: 1680px;
+
+}
+
+.shortcut h1 {
+    position: absolute;
+    left: 80px;
+    color: #0178FA;
+    font-size: 35px;
+    line-height: 95px;
+
+}
+
+.nav {
+    position: absolute;
+    left: 300px;
+}
+
+.shortcut .nav ul li {
+
+    padding-left: 40px;
+    font-size: 20px;
+    color: #0070F3;
+    float: left;
+    line-height: 95px;
+}
+
+.mainbody {
+    position: absolute;
+    top: 130px;
+}
+
+.table {
+    position: absolute;
+
+    left: 280px;
+}
+
+.table tr td {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}

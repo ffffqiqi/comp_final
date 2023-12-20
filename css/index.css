@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom, #C9E7F4, #0D78F4);
+}
+
+.shortcut {
+    height: 95px;
+    border-bottom: white 1px solid;
+    width: 1680px;
+
+}
+
+.shortcut h1 {
+    position: absolute;
+    left: 80px;
+    color: #0178FA;
+    font-size: 35px;
+    line-height: 95px;
+
+}
+
+.nav {
+    position: absolute;
+    left: 300px;
+}
+
+.shortcut .nav ul li {
+
+    padding-left: 40px;
+    font-size: 20px;
+    color: #0070F3;
+    float: left;
+    line-height: 95px;
+}
+
+.banner {
+    height: 300px;
+
+    width: 1528px;
+    height: 381px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    border-radius: 11px;
+
+}
+
+.banner h1 {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 534px;
+    top: 180px;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    left: 400px;
+    top: 250px;
+}
+
+.procedure {
+    position: absolute;
+    left: 80px;
+    top: 500px;
+
+}
+
+.procedure h2 {
+    color: white;
+    font-size: 36px;
+}
+
+.procedure ul li {
+    margin-top: 15px;
+    width: 381px;
+    float: left;
+
+
+}
+
+.introduction {
+    margin: 0px;
+}
+
+/* .dot {
+    margin-left: 39px;
+    margin-top: 350px;
+} */
