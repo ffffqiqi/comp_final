@@ -67,7 +67,7 @@
         document.getElementById('confirmButton').addEventListener('click', function () {
             val = document.getElementById("prompt")
             const prompt = val.value; // Replace with your actual prompt
-            fetch(`http://localhost:3000/generate?prompt=${prompt}`)
+            fetch(`http://localhost:9000/generate?prompt=${prompt}`)
                 .then(response => response.blob())
                 .then(blob => {
                     const imageUrl = URL.createObjectURL(blob);

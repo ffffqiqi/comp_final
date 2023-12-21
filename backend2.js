@@ -50,7 +50,21 @@ app.get('/images', (req, res) => {
     Image.find({})
         .then(images => {
             let count = 0
-            let html = '<html lang = "en" > <head><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/account.css"> </head> <body> <div class="shortcut"><div><h1>Cabinchic</h1><div class="nav"><ul><li><a href="index.html">Home</a></li><li><a href="picture.html">Picture</a></li><li>< a href = "function.html" > Function</></li ><li><a href="account.html">Account</a></li></ul ></div> </div></div ><div class="function-section"><h2>Account</h2><table class="table"><tbody><table class="table"> <tbody> <tr>'
+            let html = `<html lang = "en" > 
+            <head>
+            <link rel="stylesheet" href="css/base.css">
+            <link rel="stylesheet" href="css/account.css"> 
+            </head>
+            <body>
+            <div class="shortcut">
+            <div><h1>Cabinchic</h1><div class="nav"><ul><li>
+            <a href="index.html">Home</a></li><li>
+            <a href="picture.html">Picture</a></li><li>
+            <a href ="function.html" > Function</a></li ><li>
+            <a href="account.html">Account</a></li></ul ></div> </div></div >
+            <div class="function-section"><h2>History</h2>
+            <table class="table"><tbody><table class="table"> <tbody> <tr>`
+
             images.forEach(image => {
                 count++;
                 html += `<td><img src="data:image/png;charset=utf-8;base64,${image.file}" alt="${image.name} by ${image.creator}" style="width:200px;height:200px;"/></td>`;

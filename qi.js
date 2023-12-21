@@ -40,6 +40,11 @@ const server = http.createServer((request, response) => {
         response.setHeader("Content-Type", "text/html");
         response.end(html);
     }
+    else if (pathname === '/css/account.css') {
+        let css = fs.readFileSync(path.join(__dirname, '../compfinal/css/account.css'));
+        response.setHeader("Content-Type", "text/css");
+        response.end(css);
+    }
 
 
     else if (pathname === '/account.html') {
